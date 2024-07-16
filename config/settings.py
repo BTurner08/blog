@@ -26,7 +26,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 
-SECRET_KEY = 'django-insecure-8@4wlef7@54ybdidr&_gx@_nm)--+7(#3(7c7jpj6h-%$5d3&q'
 SECRET_KEY = env.str("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -131,6 +130,7 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [str(BASE_DIR.joinpath("static"))]
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 STATIC_ROOT = str(BASE_DIR.joinpath("staticfiles"))
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
